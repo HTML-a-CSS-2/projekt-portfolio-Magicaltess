@@ -1,0 +1,446 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body { background-color: rgb(240, 31, 16);
+    margin: 0;
+}
+
+:root {
+    --primary-color: rgb(240, 31, 16);
+    --secondary-color: white;
+}
+
+
+.blok__nav--menu {
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    background-color: var(--primary-color);
+}
+
+
+li {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 110%;
+    transition: transform .2s;
+}
+
+.blok__nav--menu a {
+    text-decoration: none;
+    color: var(--secondary-color); 
+}
+
+.blok__nav--menu li:hover {
+    transform: scale(1.2);
+}
+
+.blok {
+    position: relative;
+    width: 100%;
+}
+
+.blok--uvod {
+    height: 15rem;
+    background-color: var(--primary-color);
+}
+
+.blok__h1--uvod {
+    color: var(--secondary-color);
+    font-size: 200%;
+    position: absolute;
+    top: 16%;
+    left: 2%;
+}
+
+.blok__p--uvod {
+    color: var(--secondary-color);
+    font-size: 600%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.blok--about-me {
+    height: 25rem;
+    background-color: var(--secondary-color);
+}
+
+.blok__h2--about-me {
+    color: var(--primary-color);
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    font-size: 160%;
+}
+
+.blok__p--about-me-first {
+    color: black;
+    margin: 5% 20% 0 10%;
+    position: absolute;
+    top: 15%;
+    line-height: 1.5;
+    font-size: 120%;
+}
+
+.blok__p--about-me-second {
+    color: black;
+    margin: 0 20% 5% 10%;
+    position: absolute;
+    top: 55%;
+    line-height: 1.5;
+    font-size: 120%;
+}
+
+.blok--my-work {
+    height: 37rem;
+    background-color: var(--primary-color);
+}
+
+.blok__h2--my-work {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 5%;
+    left: 43%;
+}
+
+.blok__p--my-work {
+    color: var(--secondary-color);
+    font-size: 550%;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+}
+
+.blok__p--my-work-first {
+    top: 25%;
+    left: 6%;
+}
+
+.blok__p--my-work-second {
+    top: 25%;
+    right: 5%;
+}
+
+.blok__p--my-work-third {
+    top: 60%;
+    left: 6%;
+}
+
+.blok__p--my-work-fourth {
+    top: 60%;
+    right: 11%;
+}
+
+.blok--prices {
+    height: 37rem;
+    background-color: var(--secondary-color);
+}
+
+.blok__h2--prices {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 400%;
+}
+
+.blok__p--prices {
+    position: absolute;
+    font-size: 130%;
+}
+
+.blok__p--prices-first {
+    top: 30%;
+    left: 10%;
+}
+
+.blok__p--prices-second {
+    top: 42%;
+    left: 10%;
+}
+
+.blok__p--prices-third {
+    top: 54%;
+    left: 10%;
+}
+
+.blok__p--prices-fourth {
+    top: 66%;
+    left: 10%;
+}
+
+.blok--contact {
+    height: 37rem;
+    background-color: var(--primary-color);
+}
+
+.blok__form {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    color: var(--secondary-color);
+    font-size: 130%;
+    width: 70%;
+}
+
+.blok__form--input {
+    margin-top: 4%;
+}
+
+.blok__form--name {
+    height: 2rem;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.blok__form--last-name {
+    height: 2rem;
+    width: 50%;
+    margin-left: 6%;
+}
+
+.blok__form--email {
+    height: 2rem;
+    width: 65%;
+    margin-left: 9%;
+}
+
+.blok__form--text {
+    height: 7rem;
+    width: 65%;
+    margin-left: 7%;
+}
+
+.blok__form--submit {
+    height: 2rem;
+    width: 40%;
+    margin-left: 30%;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 90%;
+}
+
+.blok__p--contact {
+    position: absolute;
+    font-size: 120%;
+    color: var(--secondary-color);
+}
+
+
+.blok__p--contact-first {
+    bottom: 12%;
+    right: 5%;
+}
+
+.blok__p--contact-second {
+    bottom: 5%;
+    right: 5%;
+}
+
+.blok__p--contact-third {
+    bottom: 5%;
+    left: 5%;
+}
+
+@media screen and (max-width: 870px) {
+    
+    .blok__h1--uvod {
+        color: var(--secondary-color);
+        font-size: 200%;
+        position: absolute;
+        top: 16%;
+        left: 2%;
+    }
+    
+    .blok__p--uvod {
+        color: var(--secondary-color);
+        font-size: 400%;
+        position: absolute;
+        top: 27%;
+        left: 10%;
+    }
+
+    
+    .blok__p--about-me-second {
+        top: 60%;
+    }
+    
+    .blok__p--my-work-first {
+        top: 18%;
+        left: 6%;
+        font-size: 450%;
+    }
+    
+    .blok__p--my-work-second {
+        top: 38%;
+        right: 6%;
+        font-size: 450%;
+    }
+    
+    .blok__p--my-work-third {
+        top: 58%;
+        left: 6%;
+        font-size: 450%;
+    }
+    
+    .blok__p--my-work-fourth {
+        top: 78%;
+        right: 6%;
+        font-size: 450%;
+    }
+    
+    .blok__form--input {
+        margin-top: 5%;
+    }
+    
+    .blok__form--name{
+        margin-left: 12%;
+    }
+    
+    .blok__form--last-name {
+        margin-left: 5%;
+    }
+    
+    .blok__form--email {
+        margin-left: 10%;
+    }
+    
+    .blok__form--text {
+        margin-left: 7%;
+    }
+
+}
+
+
+
+@media screen and (max-width:480px) {
+
+   .blok__nav--menu {
+        padding: 0 5%;
+    }
+
+    .blok__h1--uvod {
+        color: var(--secondary-color);
+        font-size: 300%;
+        position: absolute;
+        top: 16%;
+        left: 2%;
+    }
+
+    .blok__p--uvod {
+        color: var(--secondary-color);
+        font-size: 170%;
+        position: absolute;
+        top: 45%;
+        left: 40%;
+    }
+
+    .blok--about-me {
+        height: 28rem;
+    }
+
+    .blok__h2--about-me {
+        top: 2%;
+        left: 10%;
+    }
+
+    .blok__p--about-me-first {
+        margin: 5% 10%;
+        top: 15%;
+        font-size: 110%;
+    }
+
+    .blok__p--about-me-second {
+        margin: 5% 10%;
+        top: 55%;
+        font-size: 110%;
+    }
+
+    .blok--my-work {
+        height: 23rem;
+    }
+
+    .blok__h2--my-work {
+        top: 5%;
+        left: 37%;
+    }
+
+    .blok__p--my-work {
+        font-size: 250%;
+    }
+
+    .blok__p--my-work-first {
+        top: 25%;
+        left: 25%;
+    }
+
+    .blok__p--my-work-second {
+        top: 43%;
+        left: 21%;
+    }
+
+    .blok__p--my-work-third {
+        top: 61%;
+        left: 23%;
+    }
+
+    .blok__p--my-work-fourth {
+        top: 79%;
+        left: 25%;
+    }
+
+    .blok--prices {
+        height: 20rem;
+    }
+
+    .blok__h2--prices {
+        font-size: 250%;
+    }
+
+    .blok__p--prices {
+        font-size: 120%;
+    }
+
+    .blok--contact {
+        height: 40rem;
+    }
+
+    .blok__form {
+        width: 90%;
+    }
+
+    .blok__form--input {
+        margin-top: 10%;
+    }
+
+    .blok__form--name {
+        margin-left: 12%;
+    }
+
+    .blok__form--last-name {
+        margin-left: 2%;
+    }
+
+    .blok__form--email {
+        margin-left: 10%;
+    }
+
+    .blok__form--text {
+        margin-left: 5%;
+    }
+}
+
+
+
+
+
