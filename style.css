@@ -15,12 +15,13 @@ body { background-color: rgb(240, 31, 16);
     z-index: 10000;
     position: fixed;
     width: 100%;
-    display: flex;
-    height: 2.5rem;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 7%;
     background-color: var(--primary-color);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -47,23 +48,27 @@ li {
 
 .blok--uvod {
     height: 15rem;
+    width: 100%;
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: grid;
+    grid-template-rows: 7rem 8rem;
+    grid-template-columns: repeat(8, minmax(20px, 1fr));
+    align-items: center;
 }
 
 .blok__h1--uvod {
-    color: var(--secondary-color);
     font-size: 200%;
-    position: absolute;
-    top: 16%;
-    left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 15%;
+    padding-left: 15%;
 }
 
 .blok__p--uvod {
-    color: var(--secondary-color);
     font-size: 600%;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+    grid-column-start: 2;
+    grid-column-end: 9;
 }
 
 .blok--about-me {
@@ -100,82 +105,46 @@ li {
 .blok--my-work {
     height: 37rem;
     background-color: var(--primary-color);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    font-size: 550%;
+    color: var(--secondary-color);
+    text-align: center;
+    align-items: center;
 }
 
 .blok__h2--my-work {
-    color: var(--secondary-color);
-    position: absolute;
-    top: 5%;
-    left: 43%;
+    font-size: 35%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 5%;
 }
 
-.blok__p--my-work {
-    color: var(--secondary-color);
-    font-size: 550%;
-    font-weight: bold;
-    margin: 0;
-    position: absolute;
-}
-
-.blok__p--my-work-first {
-    top: 25%;
-    left: 6%;
-}
-
-.blok__p--my-work-second {
-    top: 25%;
-    right: 5%;
-}
-
-.blok__p--my-work-third {
-    top: 60%;
-    left: 6%;
-}
-
-.blok__p--my-work-fourth {
-    top: 60%;
-    right: 11%;
-}
 
 .blok--prices {
     height: 37rem;
     background-color: var(--secondary-color);
+    color: black;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 30% repeat(7, 10%);
+    grid-template-columns: 10% 40% 50%;
 }
 
 .blok__h2--prices {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    margin: 0;
-    padding: 0;
-    border-bottom: 2px solid var(--primary-color);
     font-size: 400%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .blok__p--prices {
-    position: absolute;
     font-size: 130%;
+    grid-column-start: 2;
 }
 
-.blok__p--prices-first {
-    top: 30%;
-    left: 10%;
-}
-
-.blok__p--prices-second {
-    top: 42%;
-    left: 10%;
-}
-
-.blok__p--prices-third {
-    top: 54%;
-    left: 10%;
-}
-
-.blok__p--prices-fourth {
-    top: 66%;
-    left: 10%;
-}
 
 .blok--contact {
     height: 37rem;
@@ -255,50 +224,48 @@ li {
 @media screen and (max-width: 870px) {
     
     .blok__h1--uvod {
-        color: var(--secondary-color);
-        font-size: 200%;
-        position: absolute;
-        top: 16%;
-        left: 2%;
+        grid-column-end: 5;
     }
     
     .blok__p--uvod {
-        color: var(--secondary-color);
         font-size: 400%;
-        position: absolute;
-        top: 27%;
-        left: 10%;
     }
 
     
     .blok__p--about-me-second {
         top: 60%;
     }
-    
-    .blok__p--my-work-first {
-        top: 18%;
-        left: 6%;
-        font-size: 450%;
+
+    .blok--my-work {
+        grid-template-rows: repeat(5, 20%);
+        grid-template-columns: 20% 60% 20%;
+        color: var(--secondary-color);
+        font-size: 400%;
+        text-align: center;
+        align-items: flex-end;
+    }
+
+    .blok__h2--my-work {
+        grid-column-start: 2;
+        padding-bottom: 8%;
+    }
+
+    .blok__p--my-work {
+        grid-column-start: 2;
     }
     
-    .blok__p--my-work-second {
-        top: 38%;
-        right: 6%;
-        font-size: 450%;
+
+    .blok--prices {
+        grid-template-rows: 30% repeat(7, 10%);
+        grid-template-columns: 10% 40% 33% 17%;
     }
     
-    .blok__p--my-work-third {
-        top: 58%;
-        left: 6%;
-        font-size: 450%;
+    .blok__h2--prices {
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
-    
-    .blok__p--my-work-fourth {
-        top: 78%;
-        right: 6%;
-        font-size: 450%;
-    }
-    
+
+
     .blok__form--input {
         margin-top: 5%;
     }
@@ -326,24 +293,19 @@ li {
 @media screen and (max-width:480px) {
 
    .blok__nav--menu {
-        padding: 0 5%;
+        padding: 1% 5%;
     }
 
     .blok__h1--uvod {
-        color: var(--secondary-color);
-        font-size: 300%;
-        position: absolute;
-        top: 16%;
-        left: 2%;
+        grid-column-end: 8;
+        padding-top: 25%;
+        padding-left: 7%;
+    }
+    
+    .blok__p--uvod {
+        font-size: 230%;
     }
 
-    .blok__p--uvod {
-        color: var(--secondary-color);
-        font-size: 170%;
-        position: absolute;
-        top: 45%;
-        left: 40%;
-    }
 
     .blok--about-me {
         height: 28rem;
@@ -367,49 +329,48 @@ li {
     }
 
     .blok--my-work {
-        height: 23rem;
+        grid-template-rows: repeat(5, 20%);
+        grid-template-columns: 15% 70% 15%;
+        color: var(--secondary-color);
+        font-size: 250%;
+        text-align: center;
+        align-items: flex-end;
     }
 
     .blok__h2--my-work {
-        top: 5%;
-        left: 37%;
+        grid-column-start: 2;
+        padding-bottom: 6%;
+        font-size: 50%;
     }
 
-    .blok__p--my-work {
-        font-size: 250%;
+
+    .blok--my-work {
+        height: 23rem;
     }
 
-    .blok__p--my-work-first {
-        top: 25%;
-        left: 25%;
+    .blok--prices {
+        grid-template-rows: 30% repeat(7, 10%);
+        grid-template-columns: 10% 45% 20% 25%;
+        font-size: 100%;
+        align-items: center;
+    }
+    
+    .blok__h2--prices {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        font-size: 170%;
+        padding-top: 5%;
     }
 
-    .blok__p--my-work-second {
-        top: 43%;
-        left: 21%;
+    .blok__p--prices {
+        grid-column-end: 4;
     }
 
-    .blok__p--my-work-third {
-        top: 61%;
-        left: 23%;
-    }
-
-    .blok__p--my-work-fourth {
-        top: 79%;
-        left: 25%;
-    }
 
     .blok--prices {
         height: 20rem;
     }
 
-    .blok__h2--prices {
-        font-size: 250%;
-    }
-
-    .blok__p--prices {
-        font-size: 120%;
-    }
 
     .blok--contact {
         height: 40rem;
