@@ -28,6 +28,12 @@
         <p class="blok__p blok__p--about-me blok__p--about-me-first">While working for some of the largest non-profits and marketing agencies in the country, our team met countless people changing the world through design, innovation, entrepreneurship, and philanthropy.</p>
 
         <p class="blok__P blok__p--about-me blok__p--about-me-second">But, being tied down to roles at larger organizations, we didnt have the bandwidth to help scale the efforts countless projects that we felt had the potential to make huge impacts around the world.</p>
+        <picture>
+            <source srcset="Small.jpg" media="(max-width:200px)"/>
+            <source srcset="Big.jpg" media="(min-width:1000)"/>
+            <img src="/Medium.jpg"/>
+        </picture>
+        
     </div>
 
     <div id="work" class="blok blok--my-work">
@@ -37,6 +43,17 @@
         <p class="blok__p blok__p--my-work blok__p--my-work-third">SEO specialist</p>
         <p class="blok__p blok__p--my-work blok__p--my-work-fourth">Web content</p>
     </div>
+
+    <img class="blok__img" src="/Picture2.jpg" alt="Marketing" 
+        srcset="
+            Picture3.jpg 500w,
+            Picture2.jpg 800w,
+            Picture1.jpg 1400w
+        "
+        width="800"
+        height="245"
+        >
+
 
     <div id="prices" class="blok blok--prices">
         <h2 class="blok__h2 blok__h2--prices">Pricing Estimates.</h2>

@@ -104,14 +104,21 @@ nav {
     }
     &__p--about-me-first {
         @include text ();
-        margin: 5% 20% 0 10%;
-        top: 15%;
+        margin: 5% 40% 0 10%;
+        top: 10%;
     }
     &__p--about-me-second {
         @include text ();
-        margin: 0 20% 5% 10%;
+        margin: 0 40% 5% 10%;
         top: 55%;
     }
+}
+
+.blok--about-me img {
+    width: 18%;
+    height:auto;
+    float: right;
+    margin: 1% 10% 0 0;
 }
 
 
@@ -135,6 +142,12 @@ nav {
     }
 }
 
+
+.blok__img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
 
 
 .blok--prices {
@@ -242,6 +255,22 @@ nav {
         top: 60%;
     }
 
+    .blok__p--about-me-first {
+        margin: 8% 34% 0 10%;
+    }
+
+    .blok__p--about-me-second {
+        margin: 0 34% 0 10%;
+    }
+
+
+    .blok--about-me img {
+        width: 23%;
+        height:auto;
+        float: right;
+        margin: 9% 5% 0 0;
+    }
+
     .blok--my-work {
         grid-template-rows: repeat(5, 20%);
         grid-template-columns: 20% 60% 20%;
@@ -313,7 +342,7 @@ nav {
 
 
     .blok--about-me {
-        height: 28rem;
+        height: 45rem;
     }
 
     .blok__h2--about-me {
@@ -323,14 +352,21 @@ nav {
 
     .blok__p--about-me-first {
         margin: 5% 10%;
-        top: 15%;
+        top: 10%;
         font-size: 110%;
     }
 
     .blok__p--about-me-second {
         margin: 5% 10%;
-        top: 55%;
+        top: 35%;
         font-size: 110%;
+    }
+
+    .blok--about-me img {
+        position: absolute;
+        top: 59%;
+        left: 28%;
+        width: 43%;
     }
 
     .blok--my-work {
