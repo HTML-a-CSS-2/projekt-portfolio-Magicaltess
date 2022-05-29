@@ -85,16 +85,25 @@ nav a {
   position: absolute;
   line-height: 1.5;
   font-size: 120%;
-  margin: 5% 20% 0 10%;
-  top: 15%;
+  margin: 5% 40% 0 10%;
+  top: 10%;
 }
 .blok__p--about-me-second {
   color: black;
   position: absolute;
   line-height: 1.5;
   font-size: 120%;
-  margin: 0 20% 5% 10%;
+  margin: 0 40% 5% 10%;
   top: 55%;
+}
+
+.blok--about-me img {
+  width: 17%;
+  height: auto;
+  float: right;
+  margin: 2% 12% 0 0;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px 0px #aeafaf;
 }
 
 .blok--my-work {
@@ -114,6 +123,13 @@ nav a {
   grid-column-start: 1;
   grid-column-end: 3;
   padding-top: 5%;
+}
+
+.blok__img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: white;
 }
 
 .blok--prices {
@@ -225,6 +241,21 @@ nav a {
     top: 60%;
   }
 
+  .blok__p--about-me-first {
+    margin: 8% 34% 0 10%;
+  }
+
+  .blok__p--about-me-second {
+    margin: 0 34% 0 10%;
+  }
+
+  .blok--about-me img {
+    width: 23%;
+    height: auto;
+    float: right;
+    margin: 9% 5% 0 0;
+  }
+
   .blok--my-work {
     grid-template-rows: repeat(5, 20%);
     grid-template-columns: 20% 60% 20%;
@@ -289,7 +320,7 @@ nav a {
   }
 
   .blok--about-me {
-    height: 28rem;
+    height: 45rem;
   }
 
   .blok__h2--about-me {
@@ -299,21 +330,28 @@ nav a {
 
   .blok__p--about-me-first {
     margin: 5% 10%;
-    top: 15%;
+    top: 10%;
     font-size: 110%;
   }
 
   .blok__p--about-me-second {
     margin: 5% 10%;
-    top: 55%;
+    top: 35%;
     font-size: 110%;
+  }
+
+  .blok--about-me img {
+    position: absolute;
+    top: 59%;
+    left: 28%;
+    width: 43%;
   }
 
   .blok--my-work {
     grid-template-rows: repeat(5, 20%);
     grid-template-columns: 15% 70% 15%;
     color: white;
-    font-size: 250%;
+    font-size: 220%;
     text-align: center;
     align-items: flex-end;
   }
