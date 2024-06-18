@@ -1,0 +1,418 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(240, 31, 16);
+  margin: 0;
+}
+
+.blok__nav--menu {
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(240, 31, 16);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav li {
+  display: inline-block;
+  color: white;
+  font-size: 110%;
+  transition: transform 0.2s;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.blok__nav--menu li:hover {
+  transform: scale(1.2);
+}
+
+.blok {
+  position: relative;
+  width: 100%;
+}
+
+.blok--uvod {
+  height: 15rem;
+  width: 100%;
+  background-color: rgb(240, 31, 16);
+  color: white;
+  display: grid;
+  grid-template-rows: 7rem 8rem;
+  grid-template-columns: repeat(8, minmax(20px, 1fr));
+  align-items: center;
+}
+
+.blok__h1--uvod {
+  font-size: 200%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 15%;
+  padding-left: 15%;
+}
+
+.blok__p--uvod {
+  font-size: 600%;
+  grid-column-start: 2;
+  grid-column-end: 9;
+}
+
+.blok--about-me {
+  height: 25rem;
+  background-color: white;
+}
+.blok__h2--about-me {
+  color: rgb(240, 31, 16);
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  font-size: 160%;
+}
+.blok__p--about-me-first {
+  color: black;
+  position: absolute;
+  line-height: 1.5;
+  font-size: 120%;
+  margin: 5% 40% 0 10%;
+  top: 10%;
+}
+.blok__p--about-me-second {
+  color: black;
+  position: absolute;
+  line-height: 1.5;
+  font-size: 120%;
+  margin: 0 40% 5% 10%;
+  top: 55%;
+}
+
+.blok--about-me img {
+  width: 17%;
+  height: auto;
+  float: right;
+  margin: 2% 12% 0 0;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px 0px #aeafaf;
+}
+
+.blok--my-work {
+  height: 37rem;
+  background-color: rgb(240, 31, 16);
+  width: 100%;
+  display: grid;
+  grid-template-rows: 10% 45% 45%;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  font-size: 550%;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.blok__h2--my-work {
+  font-size: 35%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 5%;
+}
+
+.blok__img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: white;
+}
+
+.blok--prices {
+  height: 37rem;
+  background-color: white;
+  color: black;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 30% repeat(7, 10%);
+  grid-template-columns: 10% 40% 50%;
+}
+
+.blok__h2--prices {
+  font-size: 400%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-bottom: 2px solid rgb(240, 31, 16);
+}
+
+.blok__p--prices {
+  font-size: 130%;
+  grid-column-start: 2;
+}
+
+.blok--contact {
+  height: 37rem;
+  background-color: rgb(240, 31, 16);
+}
+
+.blok__form {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  color: white;
+  font-size: 130%;
+  width: 70%;
+}
+
+.blok__form--input {
+  margin-top: 4%;
+}
+
+.blok__form--name {
+  height: 2rem;
+  width: 50%;
+  margin-left: 10%;
+}
+
+.blok__form--last-name {
+  height: 2rem;
+  width: 50%;
+  margin-left: 6%;
+}
+
+.blok__form--email {
+  height: 2rem;
+  width: 65%;
+  margin-left: 9%;
+}
+
+.blok__form--text {
+  height: 7rem;
+  width: 65%;
+  margin-left: 7%;
+}
+
+.blok__form--submit {
+  height: 2rem;
+  width: 40%;
+  margin-left: 30%;
+  color: white;
+  background-color: rgb(240, 31, 16);
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 90%;
+}
+
+.blok__p--contact {
+  position: absolute;
+  font-size: 120%;
+  color: white;
+}
+
+.blok__p--contact-first {
+  bottom: 12%;
+  right: 5%;
+}
+
+.blok__p--contact-second {
+  bottom: 5%;
+  right: 5%;
+}
+
+.blok__p--contact-third {
+  bottom: 5%;
+  left: 5%;
+}
+
+@media screen and (max-width: 870px) {
+  .blok__h1--uvod {
+    grid-column-end: 5;
+  }
+
+  .blok__p--uvod {
+    font-size: 400%;
+  }
+
+  .blok__p--about-me-second {
+    top: 60%;
+  }
+
+  .blok__p--about-me-first {
+    margin: 8% 34% 0 10%;
+  }
+
+  .blok__p--about-me-second {
+    margin: 0 34% 0 10%;
+  }
+
+  .blok--about-me img {
+    width: 23%;
+    height: auto;
+    float: right;
+    margin: 9% 5% 0 0;
+  }
+
+  .blok--my-work {
+    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: 20% 60% 20%;
+    color: white;
+    font-size: 400%;
+    text-align: center;
+    align-items: flex-end;
+  }
+
+  .blok__h2--my-work {
+    grid-column-start: 2;
+    padding-bottom: 8%;
+  }
+
+  .blok__p--my-work {
+    grid-column-start: 2;
+  }
+
+  .blok--prices {
+    grid-template-rows: 30% repeat(7, 10%);
+    grid-template-columns: 10% 40% 33% 17%;
+  }
+
+  .blok__h2--prices {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .blok__form--input {
+    margin-top: 5%;
+  }
+
+  .blok__form--name {
+    margin-left: 12%;
+  }
+
+  .blok__form--last-name {
+    margin-left: 5%;
+  }
+
+  .blok__form--email {
+    margin-left: 10%;
+  }
+
+  .blok__form--text {
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blok__nav--menu {
+    padding: 1% 5%;
+  }
+
+  .blok__h1--uvod {
+    grid-column-end: 8;
+    padding-top: 25%;
+    padding-left: 7%;
+  }
+
+  .blok__p--uvod {
+    font-size: 230%;
+  }
+
+  .blok--about-me {
+    height: 45rem;
+  }
+
+  .blok__h2--about-me {
+    top: 2%;
+    left: 10%;
+  }
+
+  .blok__p--about-me-first {
+    margin: 5% 10%;
+    top: 10%;
+    font-size: 110%;
+  }
+
+  .blok__p--about-me-second {
+    margin: 5% 10%;
+    top: 35%;
+    font-size: 110%;
+  }
+
+  .blok--about-me img {
+    position: absolute;
+    top: 59%;
+    left: 28%;
+    width: 43%;
+  }
+
+  .blok--my-work {
+    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: 15% 70% 15%;
+    color: white;
+    font-size: 220%;
+    text-align: center;
+    align-items: flex-end;
+  }
+
+  .blok__h2--my-work {
+    grid-column-start: 2;
+    padding-bottom: 6%;
+    font-size: 50%;
+  }
+
+  .blok--my-work {
+    height: 23rem;
+  }
+
+  .blok--prices {
+    grid-template-rows: 30% repeat(7, 10%);
+    grid-template-columns: 10% 45% 20% 25%;
+    font-size: 100%;
+    align-items: center;
+  }
+
+  .blok__h2--prices {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 170%;
+    padding-top: 5%;
+  }
+
+  .blok__p--prices {
+    grid-column-end: 4;
+  }
+
+  .blok--prices {
+    height: 20rem;
+  }
+
+  .blok--contact {
+    height: 40rem;
+  }
+
+  .blok__form {
+    width: 90%;
+  }
+
+  .blok__form--input {
+    margin-top: 10%;
+  }
+
+  .blok__form--name {
+    margin-left: 12%;
+  }
+
+  .blok__form--last-name {
+    margin-left: 2%;
+  }
+
+  .blok__form--email {
+    margin-left: 10%;
+  }
+
+  .blok__form--text {
+    margin-left: 5%;
+  }
+}/*# sourceMappingURL=style.css.map */

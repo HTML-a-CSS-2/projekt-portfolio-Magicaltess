@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing specialist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="blok blok--menu">
+        <nav class="blok__nav--menu">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </div>
+    
+    <div class="blok blok--uvod">
+        <h1 class="uvod__h1 blok__h1--uvod">Eliška Vrňatová</h1>
+        <p class="blok__p blok__p--uvod">Marketing specialist</p>
+    </div>
+
+    <div id="about" class="blok blok--about-me">
+        <h2 class="blok__h2 blok__h2--about-me">About me.</h2>
+        <p class="blok__p blok__p--about-me blok__p--about-me-first">While working for some of the largest non-profits and marketing agencies in the country, our team met countless people changing the world through design, innovation, entrepreneurship, and philanthropy.</p>
+
+        <p class="blok__P blok__p--about-me blok__p--about-me-second">But, being tied down to roles at larger organizations, we didnt have the bandwidth to help scale the efforts countless projects that we felt had the potential to make huge impacts around the world.</p>
+        <picture>
+            <source srcset="Small.jpg" media="(max-width:200px)"/>
+            <source srcset="Big.jpg" media="(min-width:1000)"/>
+            <img src="/Medium.jpg"/>
+        </picture>
+        
+    </div>
+
+    <div id="work" class="blok blok--my-work">
+        <h2 class="blok__h2 blok__h2--my-work">What I do.</h2>
+        <p class="blok__p blok__p--my-work blok__p--my-work-first">
+            <svg class="blog__svg" width="50" height="50">
+                <line x1="0" y1="0" X2="25" y2="25" stroke="white" stroke-width="3"></line>
+                <line x1="25" y1="25" X2="0" y2="50" stroke="white" stroke-width="3"> 
+            </svg>Social media</p>
+        <p class="blok__p blok__p--my-work blok__p--my-work-second">
+            <svg class="blog__svg" width="50" height="50">
+                <line x1="0" y1="0" X2="25" y2="25" stroke="white" stroke-width="3"></line>
+                <line x1="25" y1="25" X2="0" y2="50" stroke="white" stroke-width="3"> 
+            </svg>PPC campaign</p>
+        <p class="blok__p blok__p--my-work blok__p--my-work-third">
+            <svg class="blog__svg" width="50" height="50">
+                <line x1="0" y1="0" X2="25" y2="25" stroke="white" stroke-width="3"></line>
+                <line x1="25" y1="25" X2="0" y2="50" stroke="white" stroke-width="3"> 
+            </svg>SEO specialist</p>
+        <p class="blok__p blok__p--my-work blok__p--my-work-fourth">
+            <svg class="blog__svg" width="50" height="50">
+                <line x1="0" y1="0" X2="25" y2="25" stroke="white" stroke-width="3"></line>
+                <line x1="25" y1="25" X2="0" y2="50" stroke="white" stroke-width="3"> 
+            </svg>Web content</p>
+    </div>
+
+    <img class="blok__img" src="/Picture2.png" alt="Marketing" 
+        srcset="
+            Picture3.png 500w,
+            Picture2.png 800w,
+            Picture1.png 1400w
+        "
+        width="800"
+        height="245"
+        >
+
+
+    <div id="prices" class="blok blok--prices">
+        <h2 class="blok__h2 blok__h2--prices">Pricing Estimates.</h2>
+       <p class="blok__p blok__p--prices blok__p--prices-first">Branding starter kit.....$10k</p>
+       <p class="blok__p blok__p--prices blok__p--prices-second">PPC campaign.....$10k</p> 
+       <p class="blok__p blok__p--prices blok__p--prices-third">SEO analysis.....$8k</p>
+       <p class="blok__p blok__p--prices blok__p--prices-fourth">Web content.....$5k</p>
+    </div>
+
+    <div id="contact" class="blok blok--contact">
+        <form class="blok__form" method="post">
+            Name <input class="blok__form--input blok__form--name" type="text" name="jmeno" /><br />
+            Last name <input class="blok__form--input blok__form--last-name type="text" name="prijmeni" /><br />
+            E-mail <input class="blok__form--input blok__form--email" type="email" name="email" /><br />
+            Message <input class="blok__form--input blok__form--text" type="text" name="text" /><br />
+            <input class="blok__form--input blok__form--submit" type="submit" value="Submit"/>
+        </form>
+        <p class="blok__p blok__p--contact blok__p--contact-first">Instagram</p>
+        <p class="blok__p blok__p--contact blok__p--contact-second">Linkedin</p>
+        <p class="blok__p blok__p--contact blok__p--contact-third">eliska.vrnatova1@gmail.com</p>
+    </div>
+    
+</body>
+</html>
